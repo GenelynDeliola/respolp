@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <section class="sec">
+
+
+    <style>
+        body {
+            font-size: large;
+            background-image: url(z.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #ff8fab;
+        }
+
+        .nav {
+            background-color: #333;
+            overflow: hidden;
+            
+        }
+
+        .nav a {
+            float: right;
+            display: block;
+            color: #ff8fab;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 89%;
+            padding: 20px;
+        }
+        
+        .hero-img img{
+            width: 700px;
+            height: auto;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #fb6f92;
+            color: black;
+        }
+        .thumb {
+            position: absolute;
+            left: 61%;
+            top: 9%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+        .thumb li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li:hover
+{
+    transform: translate(-15px);
+}
+.thumb li img
+{
+    max-width: 150px;
+    border: 5px solid  #ff6eb2;
+}
+
+@media (max-width:1340px) {
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+    .bl-text h3{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+}
+
+@media (max-width:1195px) {
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .bl-text{
+        padding-top: 115px;
+    }
+    .hero-img{
+        text-align: center;
+    }
+    .hero-img img{
+        width: 560px;
+        height: auto;
+    }
+    .bl{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .icons{
+        display: none;
+    }
+    .scroll-down{
+        display: none;
+    }
+}
+@media (max-width: 680px) {
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#home">Home</a>
+
+    </div>
+    <header>
+        <a href="#"><img src="logopink.png" class="logo" height="141px"></a>
+        </header>
+
+
+    <div class="container">
+        <h2><b>Milky Way To Your Heart</h2></b>
+        <h2><b>Ice cream is one of the most<br> 
+            commonly Loved desserts on this planet.<br>
+            It has a creamy, sweet taste that many<br>
+            people love. Ice cream is delicious<br>
+            and famous, and it is made from dairy<br> 
+            products such as milk<br>
+            and cream, eggs, sugar and sorbet powder. <br>
+            Cream can be made using fruits, vegetables,<br> 
+            and milk instead of sugar.</p></b>
+         <h5>
+         <div class="hero-img">
+            <img src="ice-cream.jpg" height="479px">
+        </div>
+
+            <a href="#" id="ShowProducts" class="button">ORDER HERE</a>
+        <div id="hiddenParagraph" style="display: none;">
+        </h5>
+        <div class="subscribeForm">
+            <input type="email" id="email" placeholder="Review">
+            <button onclick="subscribe()">Submit Review</button>
+        </div>
+    </div>
+
+    <script>
+      function subscribe() {
+            var review = document.getElementById("email").value;
+            alert("Submit your review: " + review);
+        }
+        const soonLink = document.getElementById("soonLink");
+        const hiddenParagraph = document.getElementById("hiddenParagraph");
+
+
+    </script>
+</body>
+</html>
